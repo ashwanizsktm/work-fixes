@@ -1,0 +1,9 @@
+<h2>parent receiving data from child:({{ message }})</h2>
+<app-child
+  *ngFor="let item of allData"
+  [items]="item"
+  (childMsg)="receiveData($event)"
+></app-child>
+
+<p>Value: {{ 6456676.1 | currency }}</p>
+<p [innerHTML]="interestPayment | currency"></p>
